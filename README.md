@@ -1,9 +1,8 @@
 # minishells
 
-This repo is where I park the Nix/devenv shells I actually use for the
-different open source organisations I work with. Instead of reinventing a dev
-environment every time, I plug in system config once and spin up a shell per
-project.
+This repo is where I park the Nix/devenv shells I actually use for the different
+open source organisations I work with. Instead of reinventing a dev environment
+every time, I plug in system config once and spin up a shell per project.
 
 ## Requirements
 
@@ -62,7 +61,8 @@ use flake github:shikanime-studio/minishells#cloud-pi-native \
 
 ## Adding A Shell
 
-Shells live under `devenv.shells` in \[flake.nix\](file:///Users/shikanimedeva/Source/Repos/github.com/shikanime-studio/minishells/flake.nix).
+Shells live under `devenv.shells` in
+\[flake.nix\](file:///Users/shikanimedeva/Source/Repos/github.com/shikanime-studio/minishells/flake.nix).
 Most shells import `base` for common packages and settings, then layer extra
 languages, packages, env vars, and hooks:
 
@@ -78,6 +78,6 @@ devenv.shells.my-shell = {
 };
 ```
 
-This flake also imports [devlib](https://github.com/shikanime-studio/devlib),
-so shells can reuse `devlib.devenvModules.<name>` profiles for consistent
+This flake also imports [devlib](https://github.com/shikanime-studio/devlib), so
+shells can reuse `devlib.devenvModules.<name>` profiles for consistent
 formatters, hooks, and generators.
