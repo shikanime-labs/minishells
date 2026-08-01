@@ -19,7 +19,7 @@ jobs:
       - uses: cachix/install-nix-action@v31
         with:
           github_access_token: ${{ steps.createGithubAppToken.outputs.token || secrets.GITHUB_TOKEN }}
-      - uses: shikanime-studio/actions/backport@v7
+      - uses: shikanime-studio/actions/backport@v9
         with:
           github-token: ${{ steps.createGithubAppToken.outputs.token || secrets.GITHUB_TOKEN }}
           gpg-passphrase: ${{ secrets.GPG_PASSPHRASE }}
@@ -45,7 +45,7 @@ jobs:
       - uses: cachix/install-nix-action@v31
         with:
           github_access_token: ${{ steps.createGithubAppToken.outputs.token || secrets.GITHUB_TOKEN }}
-      - uses: shikanime-studio/actions/close@v7
+      - uses: shikanime-studio/actions/close@v9
         with:
           github-token: ${{ steps.createGithubAppToken.outputs.token || secrets.GITHUB_TOKEN }}
           username: operator6o
@@ -70,7 +70,7 @@ jobs:
       - uses: cachix/install-nix-action@v31
         with:
           github_access_token: ${{ steps.createGithubAppToken.outputs.token || secrets.GITHUB_TOKEN }}
-      - uses: shikanime-studio/actions/land@v7
+      - uses: shikanime-studio/actions/land@v9
         with:
           email: operator6o@shikanime.studio
           fullname: Operator 6O
@@ -99,7 +99,7 @@ jobs:
       - uses: cachix/install-nix-action@v31
         with:
           github_access_token: ${{ steps.createGithubAppToken.outputs.token || secrets.GITHUB_TOKEN }}
-      - uses: shikanime-studio/actions/rebase@v7
+      - uses: shikanime-studio/actions/rebase@v9
         with:
           email: operator6o@shikanime.studio
           fullname: Operator 6O
