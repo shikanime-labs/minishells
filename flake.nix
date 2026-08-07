@@ -132,6 +132,7 @@
                 [
                   docker
                   firefox
+                  nodejs_26
                 ]
                 ++ optional (lib.meta.availableOn stdenv.hostPlatform chromium) chromium;
 
