@@ -267,6 +267,33 @@
               ];
             };
 
+            zed = {
+              imports = [ base ];
+
+              languages.rust.enable = false;
+
+              packages = with pkgs; [
+                cmake
+                clang
+                curl
+                fontconfig
+                gettext
+                git
+                jq
+                libgit2
+                libx11
+                libxcb
+                libxkbcommon
+                zstd
+                llvm
+                lld
+                openssl
+                pkg-config
+                sqlite
+                zlib
+              ];
+            };
+
             shikanime-studio = {
               imports = [ base ];
 
