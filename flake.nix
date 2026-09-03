@@ -106,9 +106,11 @@
               packages = with pkgs; [
                 jre_minimal
                 kubectl
+                kubectl-cnpg
                 kubernetes-helm
                 teleport
                 vault
+                velero
               ];
             };
 
