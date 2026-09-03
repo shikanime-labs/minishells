@@ -173,7 +173,7 @@
               packages = with pkgs; [
                 ansible
                 gnutar
-                yq
+                yq-go
               ];
             };
 
