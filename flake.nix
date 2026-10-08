@@ -108,6 +108,7 @@
                 kubectl
                 kubectl-cnpg
                 kubernetes-helm
+                sonarqube-cli
                 teleport
                 vault
                 velero
